@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://galaxy-token-web.vercel.app/sitemap.xml

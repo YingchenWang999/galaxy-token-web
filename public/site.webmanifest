@@ -1,0 +1,17 @@
+{
+  "name": "Galaxy · GXLY",
+  "short_name": "GXLY",
+  "description": "Galaxy（GXLY）Base 主网代币信息与钱包工具。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070813",
+  "theme_color": "#070813",
+  "icons": [
+    {
+      "src": "/gxly-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "galaxy-token-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "pnpm@11.13.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/check-production-env.mjs && tsc -b && vite build",
+    "build:local": "tsc -b && vite build",
+    "check:production-env": "node scripts/check-production-env.mjs",
+    "preview": "vite preview",
+    "lint": "oxlint src test vite.config.ts",
+    "check": "tsc -b",
+    "test": "node --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@reown/appkit": "1.8.22",
+    "@reown/appkit-adapter-wagmi": "1.8.22",
+    "@tanstack/react-query": "5.101.3",
+    "@wagmi/core": "3.6.3",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "viem": "2.55.4",
+    "wagmi": "3.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "26.1.1",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.3",
+    "oxlint": "1.74.0",
+    "typescript": "5.9.3",
+    "vite": "8.1.5"
+  }
+}
