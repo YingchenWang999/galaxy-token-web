@@ -444,6 +444,14 @@ button:disabled { opacity: .58; cursor: progress; }
 .channel-status p { margin: 9px 0 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
 .channel-status > div { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 9px; }
 .channel-status a { min-height: 44px; padding-inline: 13px; color: #e8e7ff; border: 1px solid var(--line); border-radius: 10px; display: inline-flex; align-items: center; text-decoration: none; }
+.project-contact { grid-column: 1 / -1; margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--line); display: grid; gap: 18px; }
+.project-contact strong { font-size: 14px; }
+.project-contact p { max-width: 720px; margin: 9px 0 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.project-contact dl { margin: 0; display: grid; gap: 10px; }
+.project-contact dl > div { min-width: 0; padding: 14px 15px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255, 255, 255, .035); }
+.project-contact dt { color: var(--muted); font: 500 11px/1.4 'IBM Plex Mono', monospace; text-transform: uppercase; letter-spacing: .06em; }
+.project-contact dd { margin: 7px 0 0; overflow-wrap: anywhere; }
+.project-contact a { min-height: 44px; color: #e8e7ff; display: inline-flex; align-items: center; text-decoration: underline; text-underline-offset: 3px; }
 
 .faq-section { padding-block: 82px; display: grid; gap: 30px; }
 .faq-list { border-top: 1px solid var(--line); }
@@ -501,6 +509,8 @@ footer a { min-height: 44px; color: #d7d8e5; display: inline-flex; align-items: 
   .token-ledger > div { grid-template-columns: minmax(150px, .5fr) minmax(0, 1.5fr); align-items: start; }
   .progress-section { grid-template-columns: minmax(260px, .7fr) minmax(0, 1.3fr); gap: 70px; padding-block: 112px; }
   .verify-links { grid-template-columns: repeat(3, 1fr); }
+  .project-contact { grid-template-columns: minmax(240px, .7fr) minmax(0, 1.3fr); gap: 40px; }
+  .project-contact dl { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .faq-section { grid-template-columns: minmax(250px, .65fr) minmax(0, 1.35fr); gap: 70px; padding-block: 112px; }
   footer { min-height: 100px; padding-block: 24px; flex-direction: row; align-items: center; justify-content: space-between; }
 }

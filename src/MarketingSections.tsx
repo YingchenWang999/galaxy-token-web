@@ -3,6 +3,7 @@ import {
   EXPLORER_LINKS,
   INITIAL_HOLDER,
   OFFICIAL_CHANNELS,
+  PROJECT_CONTACT,
 } from './content'
 import { UI_COPY, type Language } from './i18n'
 import { TOKEN } from './wallet'
@@ -111,6 +112,22 @@ export function MarketingSections({ language, copyText }: MarketingSectionsProps
           ) : (
             <p>{m.noChannels}</p>
           )}
+        </div>
+        <div className="project-contact">
+          <div>
+            <strong>{m.projectContactTitle}</strong>
+            <p>{m.projectContactDescription}</p>
+          </div>
+          <dl>
+            <div>
+              <dt>{m.projectMaintainer}</dt>
+              <dd><ExternalLink href={PROJECT_CONTACT.profile} label={s.externalNewWindow}>{PROJECT_CONTACT.name}</ExternalLink></dd>
+            </div>
+            <div>
+              <dt>{m.projectEmail}</dt>
+              <dd><a href={`mailto:${PROJECT_CONTACT.email}`}>{PROJECT_CONTACT.email}</a></dd>
+            </div>
+          </dl>
         </div>
       </section>
 

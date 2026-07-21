@@ -63,3 +63,14 @@ test('publishes safe Vercel headers and immutable asset caching', () => {
   assert.ok(config.headers.some((entry) => entry.source === '/assets/(.*)'
     && entry.headers.some((header) => /immutable/.test(header.value))))
 })
+
+test('publishes a verifiable project identity and contact channel', () => {
+  const content = readFileSync(new URL('../src/content.ts', import.meta.url), 'utf8')
+  const marketing = readFileSync(new URL('../src/MarketingSections.tsx', import.meta.url), 'utf8')
+
+  assert.match(content, /YingchenWang999/)
+  assert.match(content, /aomgyingchen@gmail\.com/)
+  assert.match(content, /github\.com\/YingchenWang999\/galaxy-token/)
+  assert.match(marketing, /mailto:/)
+  assert.match(marketing, /projectMaintainer/)
+})

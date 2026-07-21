@@ -165,6 +165,10 @@ export const UI_COPY = {
       secondExplorer: '第二浏览器',
       officialChannels: '官方社区渠道',
       noChannels: '暂未在本站发布 X、Telegram、Discord 或 GitHub 链接。任何自称官方的社交账号都应先在本官网核验。',
+      projectContactTitle: '项目身份与联系方式',
+      projectContactDescription: '以下身份与邮箱是 GXLY 当前公开的项目维护与联系渠道，可通过 GitHub 主页和公开仓库交叉核验。',
+      projectMaintainer: '项目维护者',
+      projectEmail: '项目邮箱',
       faqTitle: '先把关键问题说清楚。',
       faqs: [
         { question: 'GXLY 现在是什么？', answer: 'GXLY 定位为银河联邦主题生态的专用数字代币，是部署在 Base 主网的固定供应 ERC-20。“银河联邦”是项目世界观与社区品牌表达，不代表政府机构，GXLY 也不属于法定货币。当前官网公开的是合约事实、链上验证入口和持币人工具；尚未公布的应用、权益或合作不会在这里提前承诺。' },
@@ -308,6 +312,10 @@ export const UI_COPY = {
       secondExplorer: 'Second explorer',
       officialChannels: 'Official community channels',
       noChannels: 'No official X, Telegram, Discord, or GitHub link is published here yet. Verify any account claiming to be official against this website first.',
+      projectContactTitle: 'Project identity and contact',
+      projectContactDescription: 'These are the current public maintainer identity and contact channel for GXLY. Cross-check them against the GitHub profile and public repository.',
+      projectMaintainer: 'Project maintainer',
+      projectEmail: 'Project email',
       faqTitle: 'Clear answers to the important questions.',
       faqs: [
         { question: 'What is GXLY today?', answer: 'GXLY is positioned as the dedicated digital token of the Galactic Federation–themed ecosystem and is a fixed-supply ERC-20 deployed on Base Mainnet. “Galactic Federation” is the project’s fictional setting and community brand; it does not represent a government entity, and GXLY is not legal tender. This website currently publishes contract facts, independent verification links, and holder tools. Unannounced utility, rights, or partnerships are not promised in advance.' },
